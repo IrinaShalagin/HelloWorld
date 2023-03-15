@@ -16,11 +16,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cSe-79-9pS">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cSe-79-9pS">
                                 <rect key="frame" x="20" y="47" width="335" height="336"/>
                                 <color key="backgroundColor" systemColor="systemPinkColor"/>
                             </view>
-                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Yz0-6S-OIp">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Yz0-6S-OIp">
                                 <rect key="frame" x="20" y="442" width="335" height="336"/>
                                 <color key="backgroundColor" systemColor="systemPinkColor"/>
                             </view>
@@ -31,7 +31,9 @@
                             <constraint firstItem="Yz0-6S-OIp" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="HdZ-oO-4Yg"/>
                             <constraint firstItem="Yz0-6S-OIp" firstAttribute="top" secondItem="cSe-79-9pS" secondAttribute="bottom" constant="59" id="Jp7-Lz-OCe"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Yz0-6S-OIp" secondAttribute="trailing" constant="20" id="Mks-5v-cc1"/>
+                            <constraint firstItem="Yz0-6S-OIp" firstAttribute="height" secondItem="cSe-79-9pS" secondAttribute="height" id="crE-iz-3Ss"/>
                             <constraint firstItem="cSe-79-9pS" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="ffV-fB-fMY"/>
+                            <constraint firstItem="Yz0-6S-OIp" firstAttribute="width" secondItem="cSe-79-9pS" secondAttribute="width" id="ji6-Au-bay"/>
                             <constraint firstItem="cSe-79-9pS" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="oyj-aN-YOM"/>
                             <constraint firstItem="Yz0-6S-OIp" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="rfV-I6-ICg"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="cSe-79-9pS" secondAttribute="trailing" constant="20" id="smZ-XT-1Hh"/>
