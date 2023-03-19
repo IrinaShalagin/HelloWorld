@@ -23,16 +23,18 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dv7-Jr-Ov2">
-                                <rect key="frame" x="108" y="570.66666666666663" width="177" height="43"/>
+                                <rect key="frame" x="108" y="572.66666666666663" width="177" height="41"/>
+                                <color key="backgroundColor" systemColor="systemPinkColor"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="177" id="5Tf-Xh-EsS"/>
                                 </constraints>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Show Greeting" cornerStyle="large">
-                                    <fontDescription key="titleFontDescription" type="system" pointSize="24"/>
-                                </buttonConfiguration>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Show Greeting">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
                                 <connections>
-                                    <action selector="greetingButtonDidTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="WeA-38-1oM"/>
+                                    <action selector="greetingButtonDidTapped" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ogq-8i-EFE"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -47,17 +49,21 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="greetingLabel" destination="pQl-Ev-2L6" id="2kG-Db-OyI"/>
+                        <outlet property="greetingButton" destination="dv7-Jr-Ov2" id="Lpx-0h-FBn"/>
+                        <outlet property="greetingLabel" destination="pQl-Ev-2L6" id="MRI-Is-Qhh"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="47.200000000000003" y="-3.1484257871064472"/>
+            <point key="canvasLocation" x="711" y="4"/>
         </scene>
     </scenes>
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemPinkColor">
+            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
